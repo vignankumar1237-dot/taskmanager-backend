@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = "http://localhost:5173") // React (Vite) dev server
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5173"})
 public class TaskController {
 
     private final TaskService taskService;
